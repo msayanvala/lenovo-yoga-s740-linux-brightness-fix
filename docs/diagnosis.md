@@ -98,6 +98,10 @@ The repair was confirmed at these intervals:
 
 The public default is 100 ms as a balance between responsiveness and polling frequency.
 
+## Reboot and login-screen validation
+
+The DKMS installation was reboot-tested on Ubuntu kernel `7.0.0-29-generic`. Module version `1.0.0` loaded automatically with `poll_interval_ms=100`, and both brightness keys worked on the graphical login screen before a user session started. They continued to work after signing in to GNOME. This confirms that the repair does not depend on a per-user shortcut, login script, or desktop-session helper.
+
 ## Observation versus inference
 
 Observed:

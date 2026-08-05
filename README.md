@@ -26,11 +26,11 @@ This is a community workaround, not an upstream kernel fix.
 | DMI product | `81RS` |
 | BIOS | `BYCN39WW` |
 | Distribution | Ubuntu 26.04 |
-| Kernel | `7.0.0-28-generic` |
+| Kernels | `7.0.0-28-generic`, `7.0.0-29-generic` |
 | Desktop | GNOME 50, Wayland |
 | Graphics | Intel `i915` with `intel_backlight` |
 
-DKMS builds were also completed successfully for Ubuntu kernel `7.0.0-29-generic`; a reboot test on that kernel is still pending.
+After rebooting into `7.0.0-29-generic`, DKMS loaded module version `1.0.0` automatically with the 100 ms default. The brightness keys worked both on the graphical login screen and after signing in to GNOME.
 
 ## Before installing
 
